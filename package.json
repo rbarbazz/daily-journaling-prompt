@@ -1,0 +1,24 @@
+{
+  "name": "daily-journaling-prompts",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "watch": "tailwindcss -i ./src/styles.css -o ./public/styles.css --watch",
+    "build": "tailwindcss -i ./src/styles.css -o ./public/styles.css --minify && node ./src/getDailyPrompt.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rbarbazz/daily-journaling-prompts.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rbarbazz/daily-journaling-prompts/issues"
+  },
+  "homepage": "https://github.com/rbarbazz/daily-journaling-prompts#readme",
+  "devDependencies": {
+    "tailwindcss": "^3.3.2"
+  }
+}
