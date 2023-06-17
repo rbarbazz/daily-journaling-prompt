@@ -39,6 +39,7 @@ const randomPrompt = nextPrompts[randomPromptIndex]
 const updatedNextPrompts = [...nextPrompts]
 
 updatedNextPrompts.splice(randomPromptIndex, 1)
+console.log('New next prompts size:', updatedNextPrompts.length)
 writeFileSync(
   path.join(__dirname, NEXT_PROMPTS_FILE_PATH),
   updatedNextPrompts.join('\n'),
