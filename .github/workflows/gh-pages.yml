@@ -19,7 +19,11 @@ jobs:
         uses: actions/cache@v3
         with:
           path: src/next-prompts.txt
-          key: next-prompts
+          # Caches are immutable so the key needs to be unique
+          key: next-prompts-${{ github.run_number }}
+          # With this key, Github will retrieve the nearest (most recent) key
+          restore-keys: |
+            next-prompts
 
       - name: Install dependencies
         run: npm ci
