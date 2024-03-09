@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "watch": "tailwindcss -i ./src/styles.css -o ./public/styles.css --watch",
-    "build": "tailwindcss -i ./src/styles.css -o ./public/styles.css --minify && node ./src/getDailyPrompt.js"
+    "build": "tailwindcss -i ./src/styles.css -o ./public/styles.css --minify && node ./src/getDailyPrompt.js && cp ./src/github-mark.svg ./public/github-mark.svg"
   },
   "repository": {
     "type": "git",
