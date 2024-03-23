@@ -1,5 +1,5 @@
 {
-  "name": "daily-journaling-prompts",
+  "name": "daily-journaling-prompt",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -9,15 +9,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/rbarbazz/daily-journaling-prompts.git"
+    "url": "git+https://github.com/rbarbazz/daily-journaling-prompt.git"
   },
   "keywords": [],
   "author": "",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/rbarbazz/daily-journaling-prompts/issues"
+    "url": "https://github.com/rbarbazz/daily-journaling-prompt/issues"
   },
-  "homepage": "https://github.com/rbarbazz/daily-journaling-prompts#readme",
+  "homepage": "https://github.com/rbarbazz/daily-journaling-prompt#readme",
   "devDependencies": {
     "tailwindcss": "^3.4.1"
   }
