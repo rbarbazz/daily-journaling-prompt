@@ -46,15 +46,18 @@ writeFileSync(
   'utf8',
 )
 
-const htmlString = readFileSync(path.join(__dirname, 'index.html'), 'utf8')
+const htmlString = readFileSync(
+  path.join(__dirname, '../dist/index.html'),
+  'utf8',
+)
 const modifiedHtmlString = htmlString.replace(
   '{{ DAILY_PROMPT }}',
   randomPrompt,
 )
 
-mkdirSync(path.join(__dirname, '../public'), { recursive: true })
+mkdirSync(path.join(__dirname, '../dist'), { recursive: true })
 writeFileSync(
-  path.join(__dirname, '../public/index.html'),
+  path.join(__dirname, '../dist/index.html'),
   modifiedHtmlString,
   'utf8',
 )

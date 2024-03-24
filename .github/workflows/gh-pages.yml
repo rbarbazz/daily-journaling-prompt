@@ -40,6 +40,7 @@ jobs:
           user_name: github-actions[bot]
           user_email: 41898282+github-actions[bot]@users.noreply.github.com
           cname: journaling.rbarbazz.com
+          publish_dir: ./dist
 
       - uses: gautamkrishnar/keepalive-workflow@v1
         with:
