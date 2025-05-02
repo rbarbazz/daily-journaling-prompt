@@ -33,7 +33,7 @@ jobs:
         run: npm run build
 
       - name: Deploy
-        uses: peaceiris/actions-gh-pages@v3
+        uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           # https://github.com/actions/checkout/issues/13#issuecomment-724415212
